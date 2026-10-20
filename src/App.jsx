@@ -4,7 +4,7 @@ import Panel from './components/Panel'
 import KartuMenu from './components/KartuMenu'
 
 function App() {
-  const nama = "Ilham";
+  const nama = "Nadhifah";
   const N = 28;
   const jam = 9;
 
