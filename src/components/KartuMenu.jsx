@@ -1,5 +1,5 @@
 import { useState } from "react"
-import LabelHarga from "./LabelHarga.jsx"
+import LabelHarga from "./LabelHarga"
 
 function kartuMenu({nama, harga, kategori="Makanan"}) {
     const [jumlah, setJumlah] = useState(0);
@@ -8,10 +8,15 @@ function kartuMenu({nama, harga, kategori="Makanan"}) {
 
     return(
         <>
-        <div className="kartu">
+        <div>
             <h1>{nama}</h1>
-            <LabelHarga nilai={harga} />
+            <LabelHarga harga={harga} />
             <p>Kategori :{kategori}</p>
+            <div className="kontrol">
+                <button onClick={jumlah}>
+                    +
+                </button>
+            </div>
         </div>
         </>
     )
